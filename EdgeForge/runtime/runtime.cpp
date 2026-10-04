@@ -188,14 +188,7 @@ int main(int argc, char** argv) {
     std::cout << "  Pipeline: Image -> C++ -> TensorRT -> GPU -> Detections" << std::endl;
     std::cout << "=======================================================" << std::endl;
 
-    // Pre-load required NVIDIA cuDNN runtime DLLs from CUDA directory
-    LoadLibraryA("cudart64_110.dll");
-    LoadLibraryA("cudnn64_8.dll");
-    LoadLibraryA("cudnn_ops_infer64_8.dll");
-    LoadLibraryA("cudnn_cnn_infer64_8.dll");
-    LoadLibraryA("cudnn_adv_infer64_8.dll");
-    LoadLibraryA("nvinfer.dll");
-    LoadLibraryA("nvinfer_plugin.dll");
+
 
     cudaError_t cuErr = cudaSetDevice(0);
     if (cuErr != cudaSuccess) {
