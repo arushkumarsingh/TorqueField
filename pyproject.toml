@@ -5,6 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "nvidia-cuda-runtime-cu11>=11.8.89",
+    "nvidia-cudnn-cu11>=9.10.2.21",
     "onnx>=1.23.0",
     "onnxscript>=0.7.2",
     "pillow>=12.3.0",

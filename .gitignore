@@ -6,6 +6,32 @@ dist/
 wheels/
 *.egg-info
 
-# Virtual environments
-.venv
+# Virtual environments & Caches
+.venv/
 hf_cache/
+
+# Large Model Weights, Engines, Datasets & Binaries
+*.engine
+*.onnx
+*.pth
+*.pt
+*.bin
+*.tar
+*.zip
+*.7z
+bdd100k/
+
+# Compiled Binaries & Object Files
+*.exe
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
+*.pdb
+
+# Temporary & Test media
+test_input.bmp
+test_output.bmp
+
+*.data
